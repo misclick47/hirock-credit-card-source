@@ -46,18 +46,33 @@
     </script>
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="返回顶部">
-        <span class="brand-mark">信</span>
-        <span>
-          <strong>信用卡官方信源中心</strong>
-          <small>AI Source Publishing</small>
-        </span>
-      </a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#sources">信源目录</a>
+    <header class="site-header">
+      <div class="utility-bar" aria-label="网站辅助导航">
+        <span>客服热线：955XX</span>
+        <nav>
+          <a href="#machine">机器入口</a>
+          <a href="./llms.txt">llms.txt</a>
+          <a href="#submit">内容维护</a>
+        </nav>
+      </div>
+      <div class="brand-row">
+        <a class="brand" href="#top" aria-label="返回顶部">
+          <span class="brand-mark">信</span>
+          <span>
+            <strong>信用卡官方信源中心</strong>
+            <small>Credit Card Source Center</small>
+          </span>
+        </a>
+        <label class="site-search">
+          <span>站内搜索</span>
+          <input id="searchInput" type="search" placeholder="请输入年费、还款、分期、投诉等关键词">
+        </label>
+      </div>
+      <nav class="channel-nav" aria-label="信用卡频道导航">
+        <a href="#sources">信用卡知识</a>
+        <a href="#services">便捷服务</a>
         <a href="#quality">发布校验</a>
-        <a href="#machine">机器入口</a>
+        <a href="#machine">AI 信源入口</a>
         <a href="#submit">更新提报</a>
       </nav>
     </header>
@@ -65,14 +80,14 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">信用卡公开信息 · 统一发布 · 可追溯</p>
-          <h1>让用户和 AI 都能找到当前有效的信用卡官方答案</h1>
+          <p class="eyebrow">信用卡频道 · 官方公开信息</p>
+          <h1>信用卡规则查询与官方信源发布</h1>
           <p class="summary">
-            本站示范信用卡信源发布的第一期形态：将高频规则整理为 HTML 正文、稳定 URL、生命周期状态、正式依据链接和结构化数据，减少旧页面、PDF 或第三方内容造成的误引。
+            汇总信用卡年费、还款、分期、额度、账单、积分、安全与投诉渠道等高频公开信息，提供稳定 URL、更新时间、当前状态和正式依据，方便用户查询，也方便搜索与 AI 助手引用当前有效页面。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#sources">查看信源目录</a>
-            <a class="button secondary" href="./llms.txt">查看 llms.txt</a>
+            <a class="button primary" href="#sources">查询信用卡规则</a>
+            <a class="button secondary" href="#machine">查看 AI 信源入口</a>
           </div>
         </div>
         <aside class="status-panel" aria-label="站点信源状态">
@@ -91,11 +106,20 @@
         </aside>
       </section>
 
+      <section class="notice-strip" aria-label="站点公告">
+        <strong>公告</strong>
+        <span>信用卡信源目录已更新至 2026-05-19，请以页面展示的当前状态和正式依据为准。</span>
+        <a href="#quality">查看发布校验</a>
+      </section>
+
+      <section id="services" class="service-panel" aria-label="信用卡便捷服务">
+        <a href="./sources/annual-fee"><strong>年费规则</strong><span>费用与减免条件</span></a>
+        <a href="./sources/repayment"><strong>还款服务</strong><span>到账与额度恢复</span></a>
+        <a href="./sources/installment"><strong>分期业务</strong><span>规则与费用说明</span></a>
+        <a href="./sources/complaint"><strong>咨询投诉</strong><span>官方受理渠道</span></a>
+      </section>
+
       <section class="toolbar" aria-label="信源筛选">
-        <label class="search">
-          <span>搜索信源</span>
-          <input id="searchInput" type="search" placeholder="输入年费、还款、投诉等关键词">
-        </label>
         <div class="filters" role="group" aria-label="按类型筛选">
           <button class="filter active" type="button" data-filter="all">全部</button>
           <button class="filter" type="button" data-filter="规则">规则</button>
@@ -107,7 +131,7 @@
       <section id="sources" class="section">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Source Index</p>
+            <p class="eyebrow">Credit Card Guide</p>
             <h2>信用卡信源目录</h2>
           </div>
           <p>每个条目都公开展示状态、适用范围、最近更新和正式依据，便于用户判断，也便于 AI 引用正确页面。</p>
@@ -277,7 +301,7 @@
             <p class="eyebrow">Machine Readable</p>
             <h2>机器可读入口</h2>
           </div>
-          <p>示例文件已放在站点根目录，后续接入真实域名时只需替换 URL 和正式文件地址。</p>
+          <p>站点根目录提供 robots、sitemap 与 llms 文件，帮助搜索引擎和 AI 助手识别公开信用卡信源。</p>
         </div>
         <div class="machine-links">
           <a href="./robots.txt"><strong>robots.txt</strong><span>公开路径与 sitemap 声明</span></a>
@@ -321,7 +345,7 @@
     </main>
 
     <footer class="footer">
-      <p>XX银行信用卡中心 · 本地信源网站原型</p>
+      <p>XX银行信用卡中心 · 官方信源发布示范站</p>
       <p>客服电话：955XX · 投诉渠道：官方 App / 营业网点 / 消保入口</p>
     </footer>
     <script src="./script.js"></script>
