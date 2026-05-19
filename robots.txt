@@ -15,4 +15,4 @@ Disallow: /login/
 Disallow: /account/
 Disallow: /apply/private/
 
-Sitemap: https://hirock.org/sitemap.xml
+Sitemap: https://www.hirock.org/sitemap.xml
