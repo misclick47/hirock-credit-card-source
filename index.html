@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>信用卡官方信源中心</title>
+    <meta name="description" content="面向用户、搜索引擎和 AI 助手的信用卡官方信源发布网站，集中展示年费、还款、分期、额度、账单、积分、挂失、境外用卡、安全和投诉渠道等公开信息。">
+    <link rel="canonical" href="https://hirock.org/">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BankOrCreditUnion",
+        "name": "XX银行信用卡中心",
+        "url": "https://hirock.org/",
+        "telephone": "955XX",
+        "areaServed": "中国大陆",
+        "sameAs": [
+          "https://www.example-bank.com/credit-card"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "信用卡年费是否可以减免？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不同产品的年费和减免条件不同，用户应以信用卡产品页、领用合约和收费价目表中的当前有效规则为准。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "信用卡还款后多久恢复额度？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "到账时间与还款渠道相关，实时到账渠道通常较快恢复额度，跨行或第三方渠道可能存在处理时间。"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">信</span>
+        <span>
+          <strong>信用卡官方信源中心</strong>
+          <small>AI Source Publishing</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#sources">信源目录</a>
+        <a href="#quality">发布校验</a>
+        <a href="#machine">机器入口</a>
+        <a href="#submit">更新提报</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">信用卡公开信息 · 统一发布 · 可追溯</p>
+          <h1>让用户和 AI 都能找到当前有效的信用卡官方答案</h1>
+          <p class="summary">
+            本站示范信用卡信源发布的第一期形态：将高频规则整理为 HTML 正文、稳定 URL、生命周期状态、正式依据链接和结构化数据，减少旧页面、PDF 或第三方内容造成的误引。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#sources">查看信源目录</a>
+            <a class="button secondary" href="./llms.txt">查看 llms.txt</a>
+          </div>
+        </div>
+        <aside class="status-panel" aria-label="站点信源状态">
+          <div>
+            <span class="metric">10</span>
+            <span class="label">第一期专题页</span>
+          </div>
+          <div>
+            <span class="metric">100%</span>
+            <span class="label">HTML 正文展示</span>
+          </div>
+          <div>
+            <span class="metric">2026-05-19</span>
+            <span class="label">最近更新</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="toolbar" aria-label="信源筛选">
+        <label class="search">
+          <span>搜索信源</span>
+          <input id="searchInput" type="search" placeholder="输入年费、还款、投诉等关键词">
+        </label>
+        <div class="filters" role="group" aria-label="按类型筛选">
+          <button class="filter active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="规则">规则</button>
+          <button class="filter" type="button" data-filter="服务">服务</button>
+          <button class="filter" type="button" data-filter="风险">风险</button>
+        </div>
+      </section>
+
+      <section id="sources" class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Source Index</p>
+            <h2>信用卡信源目录</h2>
+          </div>
+          <p>每个条目都公开展示状态、适用范围、最近更新和正式依据，便于用户判断，也便于 AI 引用正确页面。</p>
+        </div>
+
+        <div class="source-grid" id="sourceGrid">
+          <article class="source-card" data-type="规则" data-keywords="年费 减免 收费 规则">
+            <div class="card-top">
+              <span class="tag">规则</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="annual-fee"><a href="./sources/annual-fee">信用卡年费与减免规则</a></h3>
+            <p class="answer">不同卡产品年费标准和减免条件不同，请以产品页、领用合约和收费价目表为准。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>个人信用卡持卡人</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">收费价目表</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="服务" data-keywords="还款 到账 自动还款 渠道">
+            <div class="card-top">
+              <span class="tag">服务</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="repayment"><a href="./sources/repayment">信用卡还款方式与到账时间</a></h3>
+            <p class="answer">还款到账时间取决于渠道，建议优先使用官方 App、网银或自动还款等可核验渠道。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>账单还款与额度恢复</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">还款服务说明</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="规则" data-keywords="分期 手续费 费率 账单分期">
+            <div class="card-top">
+              <span class="tag">规则</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="installment"><a href="./sources/installment">信用卡分期规则与费用</a></h3>
+            <p class="answer">分期是否可办、期数、费用和提前结清规则以申请页面展示和正式协议为准。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>账单分期、消费分期</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">分期业务条款</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="规则" data-keywords="额度 临时额度 固定额度 调额">
+            <div class="card-top">
+              <span class="tag">规则</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="limit"><a href="./sources/limit">信用卡额度与临时额度</a></h3>
+            <p class="answer">额度调整由综合评估决定，临时额度存在有效期，到期后按规则恢复。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>固定额度、临时额度</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">额度管理说明</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="服务" data-keywords="账单日 还款日 最低还款 免息期">
+            <div class="card-top">
+              <span class="tag">服务</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="bill"><a href="./sources/bill">信用卡账单日与还款日</a></h3>
+            <p class="answer">账单日、到期还款日和最低还款额以当期账单展示为准，逾期可能产生费用并影响信用记录。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>账单查询与还款安排</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">账单服务说明</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="规则" data-keywords="积分 积分兑换 里程 权益">
+            <div class="card-top">
+              <span class="tag">规则</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="points"><a href="./sources/points">信用卡积分规则</a></h3>
+            <p class="answer">积分累计、有效期、兑换限制和不累计场景以积分规则页面及活动说明为准。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>消费积分与权益兑换</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">积分计划规则</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="服务" data-keywords="挂失 补卡 丢卡 盗刷">
+            <div class="card-top">
+              <span class="tag">服务</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="lost-card"><a href="./sources/lost-card">信用卡挂失与补卡</a></h3>
+            <p class="answer">卡片遗失或疑似被盗用时，应立即通过官方渠道挂失，并按页面提示申请补卡。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>卡片遗失、损坏、被盗用</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">挂失补卡规则</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="服务" data-keywords="境外用卡 外币 汇率 海外">
+            <div class="card-top">
+              <span class="tag">服务</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="overseas"><a href="./sources/overseas">境外用卡说明</a></h3>
+            <p class="answer">境外交易可能涉及汇率、货币转换和网络受理差异，具体费用以收费价目表和卡组织规则为准。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>境外消费、取现、线上交易</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">境外用卡指南</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="风险" data-keywords="安全 风险 盗刷 诈骗 风险提示">
+            <div class="card-top">
+              <span class="tag">风险</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="security"><a href="./sources/security">信用卡用卡安全与风险提示</a></h3>
+            <p class="answer">请妥善保管卡片、密码和验证码，不向他人透露动态口令，发现异常交易及时联系官方客服。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>交易安全与反诈提示</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">安全用卡须知</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="source-card" data-type="服务" data-keywords="投诉 咨询 客服 消保 渠道">
+            <div class="card-top">
+              <span class="tag">服务</span>
+              <span class="state">生效</span>
+            </div>
+            <h3 id="complaint"><a href="./sources/complaint">信用卡投诉与咨询渠道</a></h3>
+            <p class="answer">信用卡咨询、投诉和争议处理应通过官方客服电话、营业网点、App 或消保投诉入口办理。</p>
+            <dl>
+              <div><dt>适用范围</dt><dd>咨询、投诉、争议处理</dd></div>
+              <div><dt>最近更新</dt><dd>2026-05-19</dd></div>
+              <div><dt>正式依据</dt><dd><a href="#">投诉处理流程</a></dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section id="quality" class="section split">
+        <div>
+          <p class="eyebrow">Publishing Gate</p>
+          <h2>发布前校验</h2>
+          <p>每条信源上线前应完成基础设施检查，尤其是页面正文、状态、更新时间、正式依据和 JSON-LD 一致性。</p>
+        </div>
+        <ul class="checklist">
+          <li><span></span>页面返回 200，且不依赖登录、验证码或 JS challenge</li>
+          <li><span></span>唯一 H1、首段一句话结论、核心内容为 HTML 文本</li>
+          <li><span></span>公开展示发布日期、最近更新、状态、适用范围</li>
+          <li><span></span>正式依据链接有效，旧页面标注失效并指向当前页面</li>
+          <li><span></span>同步更新 sitemap.xml、llms.txt 和 JSON-LD</li>
+        </ul>
+      </section>
+
+      <section id="machine" class="section machine">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Machine Readable</p>
+            <h2>机器可读入口</h2>
+          </div>
+          <p>示例文件已放在站点根目录，后续接入真实域名时只需替换 URL 和正式文件地址。</p>
+        </div>
+        <div class="machine-links">
+          <a href="./robots.txt"><strong>robots.txt</strong><span>公开路径与 sitemap 声明</span></a>
+          <a href="./sitemap.xml"><strong>sitemap.xml</strong><span>核心信源 URL 清单</span></a>
+          <a href="./llms.txt"><strong>llms.txt</strong><span>AI 助手信源导航</span></a>
+        </div>
+      </section>
+
+      <section id="submit" class="section submit">
+        <div>
+          <p class="eyebrow">Workflow</p>
+          <h2>信源更新提报</h2>
+          <p>这个表单用于演示 CMS 提报字段，当前为本地原型，不会向服务器提交数据。</p>
+        </div>
+        <form id="sourceForm">
+          <label>
+            页面标题
+            <input name="title" placeholder="如：信用卡年费与减免规则">
+          </label>
+          <label>
+            页面状态
+            <select name="status">
+              <option>生效</option>
+              <option>失效</option>
+              <option>归档</option>
+              <option>草稿</option>
+            </select>
+          </label>
+          <label>
+            最近更新
+            <input name="updated" type="date" value="2026-05-19">
+          </label>
+          <label>
+            正式依据链接
+            <input name="source" placeholder="https://www.example-bank.com/...">
+          </label>
+          <button class="button primary" type="submit">生成校验摘要</button>
+          <output id="formOutput" aria-live="polite"></output>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>XX银行信用卡中心 · 本地信源网站原型</p>
+      <p>客服电话：955XX · 投诉渠道：官方 App / 营业网点 / 消保入口</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

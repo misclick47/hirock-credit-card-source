@@ -1,0 +1,18 @@
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: *
+Disallow: /login/
+Disallow: /account/
+Disallow: /apply/private/
+
+Sitemap: https://hirock.org/sitemap.xml
